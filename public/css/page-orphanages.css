@@ -21,6 +21,7 @@
   width: 16.18vw;
   padding-top: 9.75vh;
   font-family: "Nunito", sans-serif;
+  color: white;
 }
 
 #side-bar-title {
@@ -43,6 +44,7 @@
 
 #location {
   animation-delay: 200ms;
+  color: white;
 }
 
 .add-orphanage {

@@ -23,13 +23,16 @@
 }
 #location {
   animation-delay: 100ms;
+  color: white;
 }
 
 #main-quote {
   animation-delay: 150ms;
+  color: white;
 }
 #visit-quote {
   animation-delay: 200ms;
+  color: white;
 }
 #visit-button {
   animation-delay: 250ms;
