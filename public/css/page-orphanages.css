@@ -1,0 +1,119 @@
+#page-orphanages {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+#side-bar {
+  background: linear-gradient(329.54deg, #15b6d6 0%, #15d6d6 100%);
+  width: clamp(25rem, 27.77vw, 45rem);
+  padding: clamp(5rem, 5vw, 8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#logo {
+  animation-delay: 50ms;
+}
+
+#middle-text {
+  width: 16.18vw;
+  padding-top: 9.75vh;
+  font-family: "Nunito", sans-serif;
+}
+
+#side-bar-title {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.2rem;
+  animation-delay: 100ms;
+}
+
+#middle-text-spacing {
+  height: 2.92vh;
+}
+
+#side-bar-description {
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  animation-delay: 150ms;
+}
+
+#location {
+  animation-delay: 200ms;
+}
+
+.add-orphanage {
+  z-index: 1000;
+  position: absolute;
+  right: 4rem;
+  bottom: 4rem;
+  background-color: #15c3d6;
+  width: 6.4rem;
+  height: 6.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 2rem;
+  transition: background-color 200ms;
+}
+
+.add-orphanage:hover {
+  background-color: #17d6eb;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  animation-delay: 100ms;
+}
+
+.leaflet-container {
+  z-index: 5;
+}
+
+.leaflet-popup-content-wrapper {
+  margin-left: 2rem;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+  height: 6.4rem;
+  display: flex;
+}
+
+.leaflet-popup-content {
+  color: #0089a5;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  /* margin: 1.8rem 2.4rem; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#choose-orphanage-button {
+  box-shadow: 1.72rem 2.76rem 4.14rem rgba(23, 142, 166, 0.16);
+  width: 4rem;
+  height: 4rem;
+  background-color: #15c3d6;
+  border: 0;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 200ms;
+}
+#choose-orphanage-button:hover {
+  background-color: #17d6eb;
+}
+
+.leaflet-popup-tip {
+  display: none;
+}

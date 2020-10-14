@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lar das Meninas | Happy</title>
+    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/page-orphanage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page-orphanage">
+      <aside id="side-bar" class="animate-right">
+        <img
+          id="side-logo"
+          src="./public/images/map-marker.svg"
+          alt="Logomarca de Happy"
+        />
+        <footer>
+          <button id="side-back-button" onClick="history.back()">
+            <img src="./public/images/arrow-back.svg" alt="Voltar" />
+          </button>
+        </footer>
+      </aside>
+      <main>
+        <div id="orphanage-details" class="animate-fade">
+          <img
+            id="main-image"
+            src="./public/images/home.jpg"
+            alt="Lar das Meninas"
+          />
+          <div id="images">
+            <button class="active-image" type="button">
+              <img src="./public/images/home.jpg" alt="Lar das Meninas" />
+            </button>
+            <button type="button">
+              <img src="./public/images/home.jpg" alt="Lar das Meninas" />
+            </button>
+            <button type="button">
+              <img src="./public/images/home.jpg" alt="Lar das Meninas" />
+            </button>
+            <button type="button">
+              <img src="./public/images/home.jpg" alt="Lar das Meninas" />
+            </button>
+            <button type="button">
+              <img src="./public/images/home.jpg" alt="Lar das Meninas" />
+            </button>
+            <button type="button">
+              <img src="./public/images/home.jpg" alt="Lar das Meninas" />
+            </button>
+          </div>
+
+          <div id="orphanage-details-content">
+            <h1 id="orphanage-name">Lar das meninas</h1>
+            <p id="orphanage-description">
+              Presta assistência a crianças de 06 a 15 anos que se encontre em
+              situação de risco e/ou vulnerabilidade social.
+            </p>
+            <div id="map-container">
+              <div id="map"></div>
+              <footer id="map-container-footer">
+                <a href="#">Ver rotas no Google Maps</a>
+              </footer>
+            </div>
+            <hr />
+            <h2 id="orphanage-subtitle">Instruções para visita</h2>
+            <p id="orphanage-subtitle-description">
+              Venha como se sentir a vontade e traga muito amor e paciência para
+              dar.
+            </p>
+            <div id="details-cards-container">
+              <div class="card-container hour">
+                <img src="./public/images/clock.svg" alt="Horários" />
+                <p>Horários de visitas Das 18h até 8h</p>
+              </div>
+              <div class="card-container open-on-weekends">
+                <img src="./public/images/info.svg" alt="Informações" />
+                <p>Atendemos fim de semana</p>
+              </div>
+            </div>
+            <footer>
+              <button id="whatsapp-button" type="button">
+                <img
+                  src="./public/images/whatsapp.svg"
+                  alt="Chamar no Whatsapp"
+                />
+                <p>Entrar em contato</p>
+              </button>
+            </footer>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./public/scripts/page-orphanage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+#page-landing {
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: max(50rem, 70.73vh);
+}
+
+#container {
+  width: min(77.77vw, 112rem);
+}
+
+#location,
+#main-quote,
+#visit-quote {
+  height: 22.5vh;
+}
+
+#logo {
+  animation-delay: 50ms;
+}
+#location {
+  animation-delay: 100ms;
+}
+
+#main-quote {
+  animation-delay: 150ms;
+}
+#visit-quote {
+  animation-delay: 200ms;
+}
+#visit-button {
+  animation-delay: 250ms;
+}
+
+#visit-button {
+  background-color: #ffd666;
+  border: none;
+  border-radius: 3rem;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  transition: background 200ms;
+}
+
+#visit-button:hover {
+  background-color: #96feff;
+}
+
+/* Desktop version*/
+
+@media (min-width: 760px) {
+  #container {
+    padding-top: 6vh;
+    padding-bottom: 8.5vh;
+    background-image: url("../images/bg.svg");
+    background-repeat: no-repeat;
+    background-position: 80%;
+    background-size: clamp(30rem, 38.4vw, 56rem);
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #location,
+  #main-quote,
+  #visit-quote {
+    height: initial;
+    text-align: end;
+  }
+
+  #location {
+    text-align: right;
+    line-height: 3.4rem;
+    font-size: 2.4rem;
+  }
+
+  #city {
+    font-weight: 800;
+  }
+
+  #state {
+    font-weight: 600;
+  }
+
+  #main-quote {
+    font-size: min(8vw, 7.5rem);
+    font-weight: bold;
+    width: min(39.4rem, 80%);
+    text-align: left;
+    line-height: 0.88;
+    margin-top: 13.17vh;
+    margin-bottom: 4.87vh;
+  }
+
+  #visit-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #visit-quote {
+    justify-self: left;
+    text-align: left;
+    width: max(20rem, 22.22vw);
+    line-height: 3.4rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+
+  #visit-button {
+    justify-self: right;
+    margin: initial;
+  }
+}

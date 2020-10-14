@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  background-color: #ebf2f5;
+}
+
+body,
+input,
+button,
+textarea {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Nunito", sans-serif;
+}

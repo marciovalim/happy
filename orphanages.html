@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localize um orfanato | Happy</title>
+    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/page-orphanages.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page-orphanages">
+      <aside id="side-bar">
+        <header>
+          <img
+            id="logo"
+            class="animate-right"
+            src="./public/images/map-marker.svg"
+            alt="Logomarca de Happy"
+          />
+
+          <div id="middle-text">
+            <h2 id="side-bar-title" class="animate-right">
+              Escolha um orfanato no mapa
+            </h2>
+            <div id="middle-text-spacing"></div>
+            <p id="side-bar-description" class="animate-right">
+              Muitas crianças estão esperando sua visita :)
+            </p>
+          </div>
+        </header>
+
+        <footer id="location" class="animate-right">
+          <p id="city">Barra Mansa</p>
+          <strong id="state">Rio de Janeiro</strong>
+        </footer>
+      </aside>
+      <div id="map" class="animate-fade">
+        <a href="#" class="add-orphanage" title="Cadastre um orfanato">
+          <img src="./public/images/plus.svg" alt="Cadastrar orfanato" />
+        </a>
+      </div>
+    </div>
+    <script src="./public/scripts/page-orphanages.js"></script>
+  </body>
+</html>

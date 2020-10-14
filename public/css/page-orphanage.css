@@ -1,0 +1,232 @@
+#page-orphanage {
+  display: flex;
+  min-height: 100vh;
+}
+
+#side-bar {
+  background: #15c3d6;
+  position: fixed;
+  width: 6.66vw;
+  height: 100%;
+  padding: 3.9vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#side-logo {
+  width: 3.3vw;
+}
+
+#side-back-button {
+  background: #12afcb;
+  width: 3.3vw;
+  height: 3.3vw;
+  border-radius: 1.1vw;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 200ms;
+  cursor: pointer;
+}
+
+#side-back-button:hover {
+  background-color: #17d6eb;
+}
+
+main {
+  margin-left: 6.66vw;
+  width: 100%;
+}
+
+#orphanage-details {
+  width: 49.16vw;
+  display: flex;
+  background-color: white;
+  margin: 13.17vh auto;
+  flex-direction: column;
+  border-radius: 1.38vw;
+  border: 1px solid #d3e2e5;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#main-image {
+  width: 100%;
+  height: 40.97vh;
+  object-fit: cover;
+}
+
+#images {
+  display: grid;
+  /* grid-template-columns: repeat(6, 1fr); */
+  grid-template-columns: repeat(6, 6.52vw);
+  column-gap: 1.1vw;
+  margin: 2.92vh 2.22vw 0;
+}
+
+#images button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: 1.38vw;
+  overflow: hidden;
+  opacity: 0.75;
+
+  transition: opacity 200ms;
+}
+
+#images button:hover,
+#images button.active-image {
+  opacity: 1;
+}
+
+#images img {
+  height: 6.52vw;
+  object-fit: cover;
+}
+
+#orphanage-details-content {
+  padding: 7.8vh 5.55vw 9.75vh;
+}
+
+#orphanage-name {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 3.75vw;
+  line-height: 3.75vw;
+  color: #4d6f80;
+}
+
+#orphanage-description {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 3.41vh;
+  color: #5c8599;
+  padding: 3.9vh 0px 7.8vh;
+}
+
+#map-container {
+  background: #e6f7fb;
+  box-sizing: border-box;
+  height: 35.48vh;
+  border: 1px solid #b3dae2;
+  border-radius: 1.38vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#map {
+  width: 100%;
+  height: 27.68vh;
+  border-radius: 1.38vw;
+}
+
+#map-container-footer {
+  padding-bottom: 2.43vh;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.25vw;
+  line-height: 3.04vh;
+  color: #0089a5;
+}
+
+#map-container-footer a {
+  text-decoration: none;
+}
+
+hr {
+  border: 1px solid #d3e2e6;
+  margin: 7.8vh 0;
+}
+
+#orphanage-subtitle {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 5.6vh;
+  color: #4d6f80;
+}
+
+#orphanage-subtitle-description {
+  margin: 2.92vh 0px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 3.41vh;
+  color: #5c8599;
+}
+
+#details-cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  background: linear-gradient(149.97deg, #e6f7fb 8.13%, #ffffff 92.67%);
+  border: 1px solid #b3dae2;
+  border-radius: 1.38vw;
+  width: 18.33vw;
+  height: 21.46;
+  display: flex;
+  padding: 3.9vh 1.11vw;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.hour p {
+  width: 12vw;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 0.86vw;
+  line-height: 4.15vh;
+  color: #5c8599;
+}
+
+.open-on-weekends p {
+  width: 9vw;
+  font-family: "Nunito", sans;
+  font-weight: 600;
+  font-size: 0.86vw;
+  line-height: 4.15vh;
+  color: #37c77f;
+}
+
+#whatsapp-button {
+  margin-top: 9.51vh;
+  width: 100%;
+  height: 7.8vh;
+  border-radius: 1.38vw;
+  border: none;
+  background: #3cdc8c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+#whatsapp-button:hover {
+  background: #36cf82;
+}
+
+#whatsapp-button img {
+  width: 1.38vw;
+  height: 2.43vh;
+  margin-right: 1.1vw;
+}
+
+#whatsapp-button p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 1.25vw;
+  line-height: 3.17vh;
+  color: #ffffff;
+}
