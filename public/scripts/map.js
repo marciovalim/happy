@@ -14,17 +14,17 @@ export class MyMap {
     );
   }
 
-  addMarker(coordinate, { title = null } = {}) {
+  addMarker(coordinate, { title, id } = {}) {
     const marker = this._createMarker(coordinate);
     marker.addTo(this.createdMap);
     if (title != null) {
-      this._createAndAddPopupToMarker(title, marker);
+      this._createAndAddPopupToMarker({ title, marker, id });
     }
     return marker;
   }
 
-  _createAndAddPopupToMarker(title, marker) {
-    const popup = this._createPopup(title);
+  _createAndAddPopupToMarker({ title, id, marker } = {}) {
+    const popup = this._createPopup(title, id);
     marker.bindPopup(popup);
   }
 
@@ -35,14 +35,14 @@ export class MyMap {
 
   _createIcon() {
     return L.icon({
-      iconUrl: "./public/images/map-marker.svg",
+      iconUrl: "/images/map-marker.svg",
       iconSize: [58, 68],
       iconAnchor: [29, 74],
       popupAnchor: [170, 2],
     });
   }
 
-  _createPopup(title) {
+  _createPopup(title, id) {
     return L.popup({
       closeButton: false,
       className: "map-popup",
@@ -50,8 +50,8 @@ export class MyMap {
       minHeight: 240,
     }).setContent(
       `${title} \
-        <a id='choose-orphanage-button' href='orphanage.html?id=1 class='choose-orphanage'> \
-        <img src='./public/images/arrow-white.svg'> \
+        <a id='choose-orphanage-button' href='/orphanage?id=${id} class='choose-orphanage'> \
+        <img src='/images/arrow-white.svg'> \
         </a>`
     );
   }

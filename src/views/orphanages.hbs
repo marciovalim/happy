@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Localize um orfanato | Happy</title>
-    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link rel="icon" href="/images/logo-icon.png" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -16,22 +16,32 @@
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""
     ></script>
-    <link rel="stylesheet" href="./public/css/main.css" />
-    <link rel="stylesheet" href="./public/css/animations.css" />
-    <link rel="stylesheet" href="./public/css/orphanages.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/orphanages.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    {{#each orphanages}}
+      <span hidden
+      class="orphanagesData"
+      data-id="{{this.id}}"
+      data-name="{{this.name}}"
+      data-lat="{{this.lat}}"
+      data-lng="{{this.lng}}">
+      </span>
+    {{/each}}
+
     <div id="page-orphanages">
       <aside id="side-bar">
         <header>
           <img
             id="logo"
             class="animate-right"
-            src="./public/images/map-marker.svg"
+            src="/images/map-marker.svg"
             alt="Logomarca de Happy"
           />
 
@@ -53,14 +63,14 @@
       </aside>
       <div id="map" class="animate-fade">
         <a
-          href="./create-orphanage.html"
+          href="/createOrphanage"
           class="add-orphanage"
           title="Cadastre um orfanato"
         >
-          <img src="./public/images/plus.svg" alt="Cadastrar orfanato" />
+          <img src="/images/plus.svg" alt="Cadastrar orfanato" />
         </a>
       </div>
     </div>
-    <script type="module" src="./public/scripts/orphanages.js"></script>
+    <script type="module" src="/scripts/orphanages.js"></script>
   </body>
 </html>
