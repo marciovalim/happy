@@ -1,5 +1,5 @@
-import { Map } from "./map.js";
+import { MyMap } from "./map.js";
 
 const bm_coordinate = [-22.5437332, -44.180075];
-const map = new Map(bm_coordinate);
+const map = new MyMap(bm_coordinate);
 map.addMarker(bm_coordinate, { title: "Lar das meninas" });

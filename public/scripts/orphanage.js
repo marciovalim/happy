@@ -1,4 +1,4 @@
-import { Map } from "./map.js";
+import { MyMap } from "./map.js";
 import { selectImage } from "./orphanage_select_image.js";
 
 _createMap();
@@ -14,6 +14,6 @@ function _createMap() {
     zoomControl: false,
   };
 
-  const map = new Map(bm_coordinate, { options: options });
+  const map = new MyMap(bm_coordinate, { options: options });
   map.addMarker(bm_coordinate);
 }

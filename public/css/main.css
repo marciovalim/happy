@@ -21,4 +21,5 @@ textarea {
   font-weight: 400;
   line-height: 1;
   font-family: "Nunito", sans-serif;
+  /* outline: none; */
 }

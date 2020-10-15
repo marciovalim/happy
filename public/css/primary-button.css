@@ -1,0 +1,18 @@
+.primary-button {
+  margin-top: 9.51vh;
+  width: 100%;
+  height: 7.8vh;
+  border-radius: 1.38vw;
+  border: none;
+  background: #3cdc8c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.primary-button:hover {
+  background: #36cf82;
+}

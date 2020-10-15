@@ -1,0 +1,11 @@
+.middle-container {
+  width: 49.16vw;
+  display: flex;
+  background-color: white;
+  margin: 13.17vh auto;
+  flex-direction: column;
+  border-radius: 1.38vw;
+  border: 1px solid #d3e2e5;
+  box-sizing: border-box;
+  overflow: hidden;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar Orfanato | Happy</title>
+    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link rel="stylesheet" href="./public/css/side-bar.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/separator-line.css" />
+    <link rel="stylesheet" href="./public/css/middle_container.css" />
+    <link rel="stylesheet" href="./public/css/primary-button.css" />
+    <link rel="stylesheet" href="./public/css/map.css" />
+    <link rel="stylesheet" href="./public/css/create-orphanage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page-orphanage">
+      <aside class="side-bar animate-right">
+        <img
+          class="side-bar-logo"
+          src="./public/images/map-marker.svg"
+          alt="Logomarca de Happy"
+        />
+        <footer>
+          <button class="side-bar-button" onClick="history.back()">
+            <img src="./public/images/arrow-back.svg" alt="Voltar" />
+          </button>
+        </footer>
+      </aside>
+      <main>
+        <div class="middle-container animate-fade">
+          <form action="">
+            <fieldset>
+              <legend>Dados</legend>
+
+              <hr class="separator-line" />
+
+              <div id="map-container">
+                <div id="map"></div>
+                <footer>
+                  <a href="#" id="select-location">
+                    Clique no mapa adicionar a localização
+                  </a>
+                </footer>
+                <input type="hidden" name="lat" />
+                <input type="hidden" name="lng" />
+              </div>
+
+              <div id="input-block-name" class="input-block">
+                <label for="input-name">Nome</label>
+                <input id="input-name" name="name" required />
+              </div>
+
+              <div id="input-block-about" class="input-block">
+                <label for="input-about"
+                  >Sobre
+                  <span>Máximo de 300 caracteres</span>
+                </label>
+                <textarea id="input-about" name="about" required></textarea>
+              </div>
+
+              <div id="input-block-whatsapp" class="input-block">
+                <label for="input-whatsapp">Número de Whatsapp</label>
+                <input id="input-whatsapp" name="whatsapp" required />
+              </div>
+
+              <div id="input-block-photos" class="input-block">
+                <label for="input-photos">Fotos</label>
+                <div id="photos-urls-container">
+                  <div class="new-upload">
+                    <input
+                      id="input-photos"
+                      name="photos"
+                      placeholder="Cole o link da foto aqui"
+                      required
+                    />
+                    <span onclick="deleteField(event)">
+                      <img
+                        src="./public/images/close-button.svg"
+                        alt="Excluir imagem"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <button type="button" onclick="addPhotoField()">
+                  <img
+                    src="./public/images/add-photo.svg"
+                    alt="Adicionar imagem"
+                  />
+                </button>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Visitação</legend>
+              <hr class="separator-line" />
+
+              <div class="input-block">
+                <label for="input-instructions">Instruções</label>
+                <textarea
+                  id="input-instructions"
+                  name="instructions"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-block">
+                <label for="input-open-on-weekends"
+                  >Atende fim de semana?</label
+                >
+                <input
+                  type="hidden"
+                  id="open-on-weekends"
+                  name="open_on_weekends"
+                  value="1"
+                />
+                <div id="open-on-weekends-select">
+                  <button
+                    data-value="1"
+                    onclick="selectClickedButton(event)"
+                    type="button"
+                    class="active"
+                    id="yes-button"
+                  >
+                    Sim
+                  </button>
+                  <button
+                    data-value="0"
+                    onclick="selectClickedButton(event)"
+                    type="button"
+                    id="no-button"
+                  >
+                    Não
+                  </button>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" class="primary-button">Confirmar</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="./public/scripts/create_orphanage.js"></script>
+  </body>
+</html>

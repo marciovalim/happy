@@ -18,7 +18,12 @@
     ></script>
     <link rel="stylesheet" href="./public/css/main.css" />
     <link rel="stylesheet" href="./public/css/animations.css" />
-    <link rel="stylesheet" href="./public/css/page-orphanage.css" />
+    <link rel="stylesheet" href="./public/css/orphanage.css" />
+    <link rel="stylesheet" href="./public/css/side-bar.css" />
+    <link rel="stylesheet" href="./public/css/separator-line.css" />
+    <link rel="stylesheet" href="./public/css/middle_container.css" />
+    <link rel="stylesheet" href="./public/css/primary-button.css" />
+    <link rel="stylesheet" href="./public/css/map.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
@@ -26,20 +31,20 @@
   </head>
   <body>
     <div id="page-orphanage">
-      <aside id="side-bar" class="animate-right">
+      <aside class="side-bar animate-right">
         <img
-          id="side-logo"
+          class="side-bar-logo"
           src="./public/images/map-marker.svg"
           alt="Logomarca de Happy"
         />
         <footer>
-          <button id="side-back-button" onClick="history.back()">
+          <button class="side-bar-button" onClick="history.back()">
             <img src="./public/images/arrow-back.svg" alt="Voltar" />
           </button>
         </footer>
       </aside>
       <main>
-        <div id="orphanage-details" class="animate-fade">
+        <div class="middle-container animate-fade">
           <img
             id="image-display"
             src="./public/images/home.jpg"
@@ -100,7 +105,7 @@
                 <a href="#">Ver rotas no Google Maps</a>
               </footer>
             </div>
-            <hr />
+            <hr class="separator-line" />
             <h2 id="orphanage-subtitle">Instruções para visita</h2>
             <p id="orphanage-subtitle-description">
               Venha como se sentir a vontade e traga muito amor e paciência para
@@ -117,7 +122,7 @@
               </div>
             </div>
             <footer>
-              <button id="whatsapp-button" type="button">
+              <button class="primary-button" type="button">
                 <img
                   src="./public/images/whatsapp.svg"
                   alt="Chamar no Whatsapp"

@@ -1,25 +1,26 @@
-export class Map {
+export class MyMap {
   constructor(coordinates, { options = null } = {}) {
-    this._createMap(coordinates, options);
+    this.createdMap = this._createMap(coordinates, options);
     this._createAndAddLayer();
   }
 
   _createMap(coordinates, options) {
-    this.map = L.map("map", options).setView(coordinates, 14);
+    return L.map("map", options).setView(coordinates, 14);
   }
 
   _createAndAddLayer() {
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
-      this.map
+      this.createdMap
     );
   }
 
   addMarker(coordinate, { title = null } = {}) {
     const marker = this._createMarker(coordinate);
-    marker.addTo(this.map);
+    marker.addTo(this.createdMap);
     if (title != null) {
       this._createAndAddPopupToMarker(title, marker);
     }
+    return marker;
   }
 
   _createAndAddPopupToMarker(title, marker) {

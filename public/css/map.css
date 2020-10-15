@@ -1,0 +1,22 @@
+#map-container {
+  background: #f5f8fa;
+  height: 35.48vh;
+  display: flex;
+  border: 1px solid #b3dae2;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#map {
+  width: 100%;
+}
+
+#map-container footer a {
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  line-height: 3.04vh;
+  text-align: center;
+  color: #0089a5;
+}

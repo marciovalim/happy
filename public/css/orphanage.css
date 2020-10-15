@@ -41,22 +41,14 @@ main {
   width: 100%;
 }
 
-#orphanage-details {
-  width: 49.16vw;
-  display: flex;
-  background-color: white;
-  margin: 13.17vh auto;
-  flex-direction: column;
-  border-radius: 1.38vw;
-  border: 1px solid #d3e2e5;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
 #image-display {
   width: 100%;
   height: 40.97vh;
   object-fit: cover;
+}
+
+.separator-line {
+  margin: 7.8vh 0;
 }
 
 #images {
@@ -110,34 +102,21 @@ main {
 }
 
 #map-container {
-  background: #e6f7fb;
-  box-sizing: border-box;
-  height: 35.48vh;
   border: 1px solid #b3dae2;
   border-radius: 1.38vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #map {
-  width: 100%;
   height: 27.68vh;
   border-radius: 1.38vw;
 }
 
 #map-container-footer {
   padding-bottom: 2.43vh;
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  font-size: 1.25vw;
-  line-height: 3.04vh;
-  color: #0089a5;
 }
 
 #map-container-footer a {
-  text-decoration: none;
+  font-size: 1.25vw;
 }
 
 hr {
@@ -196,25 +175,6 @@ hr {
   font-size: 0.86vw;
   line-height: 4.15vh;
   color: #37c77f;
-}
-
-#whatsapp-button {
-  margin-top: 9.51vh;
-  width: 100%;
-  height: 7.8vh;
-  border-radius: 1.38vw;
-  border: none;
-  background: #3cdc8c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  cursor: pointer;
-  transition: background-color 200ms;
-}
-
-#whatsapp-button:hover {
-  background: #36cf82;
 }
 
 #whatsapp-button img {
