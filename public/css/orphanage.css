@@ -174,19 +174,22 @@ hr {
   font-weight: 600;
   font-size: 0.86vw;
   line-height: 4.15vh;
+}
+
+.open-on-weekends.open {
   color: #37c77f;
+  background: linear-gradient(149.97deg, #edfff6 8.13%, #ffffff 92.67%);
+  border: 1px solid #a1e9c5;
 }
 
-#whatsapp-button img {
-  width: 1.38vw;
-  height: 2.43vh;
+.open-on-weekends.closed {
+  color: #ff669b;
+  background: linear-gradient(149.97deg, #fcf0f4 8.13%, #ffffff 92.67%);
+  border: 1px solid #ffdcd4;
+}
+
+.primary-button img {
+  width: 3vw;
+  height: 4vh;
   margin-right: 1.1vw;
-}
-
-#whatsapp-button p {
-  font-family: "Nunito", sans-serif;
-  font-weight: 800;
-  font-size: 1.25vw;
-  line-height: 3.17vh;
-  color: #ffffff;
 }

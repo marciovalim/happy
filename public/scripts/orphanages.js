@@ -1,8 +1,7 @@
 import { MyMap } from "./map.js";
 
-const bm_coordinate = [-22.5437332, -44.180075];
-const map = new MyMap(bm_coordinate);
-map.addMarker(bm_coordinate, { title: "Lar das meninas" });
+const initial_coordinate = [-22.5437332, -44.180075]; // Barra Mansa coordinate
+const map = new MyMap(initial_coordinate);
 
 const orphanagesData = document.querySelectorAll(".orphanagesData");
 orphanagesData.forEach((orphanageData) => {

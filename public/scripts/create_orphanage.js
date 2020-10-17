@@ -5,6 +5,16 @@ _seputMap();
 window.addPhotoField = addPhotoField;
 window.deleteField = _deleteField;
 window.selectClickedButton = _selectClickedButton;
+window.validateForm = validateForm;
+
+function validateForm(event) {
+  const latElement = document.querySelector("[name=lat]");
+  const lngElement = document.querySelector("[name=lng]");
+  const mapHasLocation = latElement.value != "" && lngElement.value != "";
+  if (mapHasLocation) return;
+  alert("Selecione uma localização no mapa");
+  event.preventDefault();
+}
 
 //#region  Setup Map
 function _seputMap() {

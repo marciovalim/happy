@@ -45,7 +45,7 @@
       </aside>
       <main>
         <div class="middle-container animate-fade">
-          <form action="">
+          <form action="create-orphanage/save" method="post" onsubmit="validateForm(event)">
             <fieldset>
               <legend>Dados</legend>
 
@@ -72,7 +72,7 @@
                   >Sobre
                   <span>Máximo de 300 caracteres</span>
                 </label>
-                <textarea id="input-about" name="about" required></textarea>
+                <textarea id="input-about" name="description" required></textarea>
               </div>
 
               <div id="input-block-whatsapp" class="input-block">
@@ -86,8 +86,9 @@
                   <div class="new-upload">
                     <input
                       id="input-photos"
-                      name="photos"
+                      name="images"
                       placeholder="Cole o link da foto aqui"
+                      type="url"
                       required
                     />
                     <span onclick="deleteField(event)">
@@ -121,13 +122,18 @@
               </div>
 
               <div class="input-block">
+                <label for="input-openingHours">Horários de visita</label>
+                <input id="input-openingHours" name="openingHours" required>
+              </div>
+
+              <div class="input-block">
                 <label for="input-open-on-weekends"
                   >Atende fim de semana?</label
                 >
                 <input
                   type="hidden"
                   id="open-on-weekends"
-                  name="open_on_weekends"
+                  name="openOnWeekends"
                   value="1"
                 />
                 <div id="open-on-weekends-select">

@@ -6,6 +6,9 @@ const pages = require("./pages");
 // create server
 const server = express();
 
+// use request body
+server.use(express.urlencoded({ extended: true }));
+
 // define static routes
 server.use(express.static("public"));
 
@@ -17,7 +20,8 @@ server.set("view engine", "hbs");
 server.get("/", pages.index);
 server.get("/orphanage", pages.orphanage);
 server.get("/orphanages", pages.orphanages);
-server.get("/createOrphanage", pages.createOrphanage);
+server.get("/create-orphanage", pages.createOrphanage);
+server.post("/create-orphanage/save", pages.saveOrphanage);
 
 // start server
-server.listen(7500);
+server.listen(5500);

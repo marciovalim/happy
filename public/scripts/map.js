@@ -50,7 +50,7 @@ export class MyMap {
       minHeight: 240,
     }).setContent(
       `${title} \
-        <a id='choose-orphanage-button' href='/orphanage?id=${id} class='choose-orphanage'> \
+        <a id='choose-orphanage-button' class='choose-orphanage' href='/orphanage?id=${id}'>
         <img src='/images/arrow-white.svg'> \
         </a>`
     );

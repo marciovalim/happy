@@ -9,8 +9,13 @@
   align-items: center;
   justify-content: center;
   color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 1.5vw;
+  line-height: 3.17vh;
   cursor: pointer;
   transition: background-color 200ms;
+  text-decoration: none;
 }
 
 .primary-button:hover {
