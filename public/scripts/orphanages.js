@@ -1,12 +1,20 @@
 import { MyMap } from "./map.js";
+import { getUserCoordinates } from "./get_coordinates.js";
 
-const initial_coordinate = [-22.5437332, -44.180075]; // Barra Mansa coordinate
-const map = new MyMap(initial_coordinate);
+start();
 
-const orphanagesData = document.querySelectorAll(".orphanagesData");
-orphanagesData.forEach((orphanageData) => {
-  const coordinates = [orphanageData.dataset.lat, orphanageData.dataset.lng];
-  const title = orphanageData.dataset.name;
-  const id = orphanageData.dataset.id;
-  map.addMarker(coordinates, { title, id });
-});
+async function start() {
+  const coordinates = await getUserCoordinates();
+  const map = new MyMap(coordinates);
+  _addOrphangesToMap(map);
+}
+
+function _addOrphangesToMap(map) {
+  const orphanagesData = document.querySelectorAll(".orphanagesData");
+  orphanagesData.forEach((orphanageData) => {
+    const coordinates = [orphanageData.dataset.lat, orphanageData.dataset.lng];
+    const title = orphanageData.dataset.name;
+    const id = orphanageData.dataset.id;
+    map.addMarker(coordinates, { title, id });
+  });
+}
