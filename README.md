@@ -16,6 +16,6 @@ Extra feature: auto geolocalization.
 
 <h2>Getting Started</h2>
 <p>
-  1- Clone this repo using <i>git clone https://github.com/MTribal/Happy.git</i> <br>
-  2- Install the dependencies using <i>npm install</i>
+  1- Clone this repo using: <i>git clone https://github.com/MTribal/Happy.git</i> <br>
+  2- Install the dependencies using: <i>npm install</i>
 </p>
