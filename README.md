@@ -1,3 +1,5 @@
+![Landing page preview](https://github.com/MTribal/Happy/blob/main/landing_screenshot.png)
+
 # Happy
 A web application that help people find orphanages to visit. <br>
 Made in 'Next Level Week 3'. <br>
